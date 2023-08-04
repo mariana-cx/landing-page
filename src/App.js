@@ -1,27 +1,12 @@
 import './App.css';
-// import components 
-import { InputData } from './components/InputDatas';
-import { MyName } from './components/MyName';
-
-export function AppLearnReact() {
+import { Navbar } from './components/Navbar';
+export const App=()=> {
 
  
 
   return (
     <div className="App">
-      <header className="App-header">
-        {/* imported components */}
-        <InputData buttonType="Add" />
-        {
-          // map function (loop through array and output my name for each element)
-          people.map((eachPeople, index) => (
-            <div key={index}>
-              <MyName myName={eachPeople} />
-            </div>
-          ))
-        }
-        <InputData buttonType="Cancel" />
-      </header>
+    <Navbar />
     </div>
   );
 }
