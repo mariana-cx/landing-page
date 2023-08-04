@@ -9,7 +9,7 @@ export const Navbar=()=>{
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="col-5"></div>
-      <div className="collapse navbar-collapse col-5" id="navbarScroll">
+      <div className="collapse navbar-collapse col-3" id="navbarScroll">
         <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
           <li className="nav-item">
             <a className="nav-link active" aria-current="page" href="#">Home</a>
@@ -25,6 +25,7 @@ export const Navbar=()=>{
           </li>
         </ul>
       </div>
+      <div className="col-3"></div>
     </div>
   </nav>)
 }
