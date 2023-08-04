@@ -5,7 +5,7 @@ import { MyName } from './components/MyName';
 
 export function AppLearnReact() {
 
-  let people = ['João Henrique Xavier', 'Lebron', 'Aaliyah', 'Diamond', 'Dominique', 'Aliyah'];
+ 
 
   return (
     <div className="App">
