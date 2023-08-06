@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Cards=()=>{
-    return (<div className="card-group mt-3">
+    return (<div className="card-group mt-3 mb-3">
     <div className="col-2"></div>
     <div className="card border rounded-top">
       <img src="https://www.edumilestones.com/career-library/images/programming.png" className="card-img-top border img-fluid rounded-top" style={{ width: '300px', height: '150px' }} alt="Card 1" />
