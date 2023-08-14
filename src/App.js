@@ -12,16 +12,16 @@ export const App = () => {
     title: "First",
     description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
   }, {
-    img: "https://www.edumilestones.com/career-library/images/programming.png",
-    title: "First",
+    img: "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/01/21182224/software-engineering.jpg",
+    title: "Second",
     description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
   }, {
-    img: "https://www.edumilestones.com/career-library/images/programming.png",
-    title: "First",
+    img: "https://img.freepik.com/premium-vector/programmer-work-laptop-computer-website-code-program-concept_133260-5402.jpg",
+    title: "Third",
     description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
   }, {
-    img: "https://www.edumilestones.com/career-library/images/programming.png",
-    title: "First",
+    img: "https://img.freepik.com/free-vector/hand-drawn-flat-design-devops-illustration_23-2149375793.jpg",
+    title: "Last",
     description: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
   }]
 
@@ -36,19 +36,12 @@ export const App = () => {
       <div className="card-group mt-3 mb-3">
         <div className="col-2"></div>
         {cards.map((e, i) => {
-          const startMargin = "ms-2"
-          if (i === 0) {
-            return (
-              <React.Fragment key={i}>
-                <Cards content={e} isFirst={true} />
-              </React.Fragment>
-            )
-          } else {
-            return (<React.Fragment key={i}>
-              <Cards content={e} />
-            </React.Fragment>)
-          }
+
+          return <React.Fragment key={i}>
+            <Cards content={e} isFirst={i === 0} />
+          </React.Fragment>
         })}
+
         <div className="col-2"></div>
       </div>
 
