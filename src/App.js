@@ -29,25 +29,15 @@ export const App = () => {
     <div className="App">
       <Navbar />
       <Jumbotron />
-
-
-
-
       <div className="card-group mt-3 mb-3">
         <div className="col-2"></div>
         {cards.map((e, i) => {
-
           return <React.Fragment key={i}>
             <Cards content={e} isFirst={i === 0} />
           </React.Fragment>
         })}
-
         <div className="col-2"></div>
       </div>
-
-
-
-
       <Footer />
     </div>
   );
